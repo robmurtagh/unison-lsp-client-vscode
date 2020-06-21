@@ -1,0 +1,48 @@
+{
+  "name": "unison-lsp-client-vscode",
+  "description": "Unison Language support for Visual Studio Code",
+  "author": "Robert Murtagh",
+  "license": "MIT",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robmurtagh/unison-lsp-client-vscode"
+  },
+  "publisher": "unisonweb",
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "unison",
+    "unisonweb"
+  ],
+  "activationEvents": [
+    "onLanguage:unison"
+  ],
+  "engines": {
+    "vscode": "^1.43.0"
+  },
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "unison",
+        "extensions": [
+          ".u"
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -watch"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^6.1.3"
+  },
+  "devDependencies": {
+    "@types/vscode": "1.43.0",
+    "typescript": "^3.9.5",
+    "vscode-test": "^1.3.0"
+  }
+}
