@@ -36,13 +36,23 @@
         "id": "unison",
         "extensions": [
           ".u"
-        ]
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "unison",
+        "scopeName": "source.u",
+        "path": "./syntaxes/unison.tmLanguage.json"
       }
     ]
   },
   "scripts": {
     "build": "tsc",
-    "watch": "tsc -watch"
+    "watch": "tsc -watch",
+    "package": "echo 'npm run package is a temporary command!' && vsce package -o ~/Desktop/",
+    "launch": "echo 'npm run launch is a temporary command!' && code --install-extension ~/Desktop/unison-0.0.1.vsix"
   },
   "dependencies": {
     "vscode-languageclient": "^6.1.3"
