@@ -15,7 +15,7 @@ import {
 let client: LanguageClient;
 
 export function activate(_context: ExtensionContext) {
-	let executable: Executable = { command: '~/.local/bin/unison-lsp-server' };
+	let executable: Executable = { command: 'unison-lsp-server' };
 	let serverOptions: ServerOptions = { run: executable, debug: executable };
 
 	// Options to control the language client

@@ -24,7 +24,7 @@
     "unisonweb"
   ],
   "activationEvents": [
-    "onLanguage:unison"
+    "onLanguage:Unison"
   ],
   "engines": {
     "vscode": "^1.43.0"
@@ -33,7 +33,7 @@
   "contributes": {
     "languages": [
       {
-        "id": "unison",
+        "id": "Unison",
         "extensions": [
           ".u"
         ],
@@ -42,7 +42,7 @@
     ],
     "grammars": [
       {
-        "language": "unison",
+        "language": "Unison",
         "scopeName": "source.u",
         "path": "./syntaxes/unison.tmLanguage.json"
       }
