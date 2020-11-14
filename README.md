@@ -5,7 +5,7 @@ This extension acts as the [Unison](https://www.unisonweb.org/) Language Server 
 ## Installation
 
 - The extension 'client' can be installed from the [Visual Studio Code marketplace](https://marketplace.visualstudio.com/vscode)
-- The extension 'server' is the `unison-lsp-server` must be installed to your `PATH`
+- The extension 'server' is an executable called `unison-lsp-server` which must be available on your `PATH`
 
 ## Features
 
